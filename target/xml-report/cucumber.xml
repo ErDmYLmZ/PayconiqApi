@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="9.695">
+    <testcase classname="Get Booking IDs" name="Getting all the Booking IDs without filtering" time="3.943">
+        <system-out>
+            <![CDATA[Given user sends the get request to "booking"...............................passed
+When user gets the status code 200..........................................passed
+Then user verify the respond body contains "bookingid"......................passed
+Then user verify the valid booking "SingleId"...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Partial Update Booking" name="User partially updates booking" time="2.85">
+        <system-out>
+            <![CDATA[Given user sends a patch request to booking "Id"............................passed
+When user gets the patch status code 200....................................passed
+Then user verify the booking was partially updated with "Firstname"and "Lastname".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Delete an existing user" name="User deletes a user" time="2.692">
+        <system-out>
+            <![CDATA[Given user sends a delete request to booking "Id"...........................passed
+When user gets the delete status code 201...................................passed
+Then user verify the booking "id" was deleted succesfully...................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
