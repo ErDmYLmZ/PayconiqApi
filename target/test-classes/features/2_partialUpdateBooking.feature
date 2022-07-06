@@ -1,5 +1,4 @@
 @Regression
-@Before(order=2)
 Feature: Partial Update Booking
   Scenario: User partially updates booking
     Given user sends a patch request to booking "Id"

@@ -1,5 +1,4 @@
 @Regression
-  @Before(order=1)
 Feature: Get Booking IDs
   Scenario: Getting all the Booking IDs without filtering
 

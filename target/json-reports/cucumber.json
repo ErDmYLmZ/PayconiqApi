@@ -1,10 +1,10 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-06-30T11:16:19.530Z",
-        "line": 4,
+        "start_timestamp": "2022-06-30T13:32:35.514Z",
+        "line": 3,
         "name": "Getting all the Booking IDs without filtering",
         "description": "",
         "id": "get-booking-ids;getting-all-the-booking-ids-without-filtering",
@@ -13,10 +13,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3292418000,
+              "duration": 5251118000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "user sends the get request to \"booking\"",
             "match": {
               "arguments": [
@@ -31,10 +31,10 @@
           },
           {
             "result": {
-              "duration": 2547000,
+              "duration": 4542000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "user gets the status code 200",
             "match": {
               "arguments": [
@@ -49,10 +49,10 @@
           },
           {
             "result": {
-              "duration": 918000,
+              "duration": 1878000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "user verify the respond body contains \"bookingid\"",
             "match": {
               "arguments": [
@@ -67,10 +67,10 @@
           },
           {
             "result": {
-              "duration": 544228000,
+              "duration": 599025000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "user verify the valid booking \"SingleId\"",
             "match": {
               "arguments": [
@@ -87,9 +87,6 @@
         "tags": [
           {
             "name": "@Regression"
-          },
-          {
-            "name": "@Before(order\u003d1)"
           }
         ]
       }
@@ -107,23 +104,15 @@
           "line": 1,
           "column": 1
         }
-      },
-      {
-        "name": "@Before(order\u003d1)",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 3
-        }
       }
     ]
   },
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-06-30T11:16:23.485Z",
-        "line": 4,
+        "start_timestamp": "2022-06-30T13:32:41.508Z",
+        "line": 3,
         "name": "User partially updates booking",
         "description": "",
         "id": "partial-update-booking;user-partially-updates-booking",
@@ -132,10 +121,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2842364000,
+              "duration": 2827233000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "user sends a patch request to booking \"Id\"",
             "match": {
               "arguments": [
@@ -150,10 +139,10 @@
           },
           {
             "result": {
-              "duration": 528000,
+              "duration": 1640000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "user gets the patch status code 200",
             "match": {
               "arguments": [
@@ -168,10 +157,10 @@
           },
           {
             "result": {
-              "duration": 589000,
+              "duration": 1626000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "user verify the booking was partially updated with \"Firstname\"and \"Lastname\"",
             "match": {
               "arguments": [
@@ -192,9 +181,6 @@
         "tags": [
           {
             "name": "@Regression"
-          },
-          {
-            "name": "@Before(order\u003d2)"
           }
         ]
       }
@@ -212,23 +198,15 @@
           "line": 1,
           "column": 1
         }
-      },
-      {
-        "name": "@Before(order\u003d2)",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 1
-        }
       }
     ]
   },
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-06-30T11:16:26.342Z",
-        "line": 4,
+        "start_timestamp": "2022-06-30T13:32:44.374Z",
+        "line": 3,
         "name": "User deletes a user",
         "description": "",
         "id": "delete-an-existing-user;user-deletes-a-user",
@@ -237,10 +215,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2147260000,
+              "duration": 2302178000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "user sends a delete request to booking \"Id\"",
             "match": {
               "arguments": [
@@ -255,10 +233,10 @@
           },
           {
             "result": {
-              "duration": 629000,
+              "duration": 2791000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "user gets the delete status code 201",
             "match": {
               "arguments": [
@@ -273,10 +251,10 @@
           },
           {
             "result": {
-              "duration": 535956000,
+              "duration": 552848000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "user verify the booking \"id\" was deleted succesfully",
             "match": {
               "arguments": [
@@ -293,9 +271,6 @@
         "tags": [
           {
             "name": "@Regression"
-          },
-          {
-            "name": "@Before(order\u003d3)"
           }
         ]
       }
@@ -311,14 +286,6 @@
         "type": "Tag",
         "location": {
           "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@Before(order\u003d3)",
-        "type": "Tag",
-        "location": {
-          "line": 2,
           "column": 1
         }
       }

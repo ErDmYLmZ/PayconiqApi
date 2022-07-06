@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -68,11 +69,12 @@ public class UsableMethods extends Base {
 
     }
 
+@Test
+    public void methodsCheck() throws IOException {
 
-    public static void main(String[] args) throws IOException {
-//        getId();
-//        createToken();
-//        getIdList();
+        getId();
+        createToken();
+        getIdList();
 
     }
 

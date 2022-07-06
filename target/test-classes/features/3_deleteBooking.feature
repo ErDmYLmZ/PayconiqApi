@@ -1,5 +1,4 @@
 @Regression
-@Before(order=3)
 Feature: Delete an existing user
   Scenario: User deletes a user
     Given user sends a delete request to booking "Id"
