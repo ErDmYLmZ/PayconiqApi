@@ -26,11 +26,11 @@ public class DeleteBookingStepDefs extends Base {
         String ReadyToken = UsableMethods.createToken();
         String singleId= UsableMethods.getId();
         System.out.println(ReadyToken);
-        System.out.println("Before Deleting the ID "+BeforeTheDelete);
+       // System.out.println("Before Deleting the ID "+BeforeTheDelete);
 
         response= given().headers("Cookie",ReadyToken,"Content-Type", ContentType.JSON).when().delete(baseUrl+ "booking/"+ singleId);
         response.prettyPrint();
-        System.out.println("After Deleting the ID "+singleId);
+      //  System.out.println("After Deleting the ID "+singleId);
 
     }
     @When("user gets the delete status code {int}")

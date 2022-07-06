@@ -26,11 +26,13 @@ public class UsableMethods extends Base {
         response=given().accept(ContentType.JSON).when().get(baseUrl + "booking");
         getBookingPojo =obj.readValue(response.asString(), BookingIdPojo[].class);
 
-        for(int i = 0; i<getBookingPojo.length; i++){
-            idlistPojo.add(getBookingPojo[i].getBookingid());
-        }
+        for (BookingIdPojo eachID :getBookingPojo
+             ) {idlistPojo.add(eachID.getBookingid());
 
-        //System.out.println(idlistPojo);
+        }
+        System.out.println(idlistPojo);
+
+
 
         return idlistPojo;
     }
@@ -72,9 +74,9 @@ public class UsableMethods extends Base {
 @Test
     public void methodsCheck() throws IOException {
 
-        getId();
-        createToken();
-        getIdList();
+//        getId();
+//        createToken();
+//        getIdList();
 
     }
 
