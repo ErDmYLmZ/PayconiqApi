@@ -71,9 +71,10 @@ public class UsableMethods extends Base {
 
 @Test
     public void methodsCheck() throws IOException {
+
         getId();
-//        createToken();
-//        getIdList();
+        createToken();
+        getIdList();
 
     }
 
